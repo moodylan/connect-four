@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GameOptionsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/gray"
+    android:id="@+id/options_fragment" >
+
+    <LinearLayout
+        android:id="@+id/options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <!-- TextView for the "Options"  -->
+        <TextView
+            android:id="@+id/setMode"
+            android:layout_width="166dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:text="@string/setMode"
+            android:textAlignment="center"
+            android:textColor="@color/ballWhite"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- RadioGroup containing difficulty levels -->
+            <!-- note: game difficulty levels have not been implemented
+                 Buttons are clickable, but they don't alter the difficulty of the game, yet. -->
+        <RadioGroup
+            android:id="@+id/options_radio_group"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_easy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/easyMode"
+                android:textColor="@color/ballWhite"
+                android:buttonTint="@color/ballWhite"
+                android:onClick="onLevelSelected" />
+
+            <RadioButton
+                android:id="@+id/radio_medium"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/mediumMode"
+                android:textColor="@color/ballWhite"
+                android:buttonTint="@color/ballWhite"
+                android:onClick="onLevelSelected" />
+
+            <RadioButton
+                android:id="@+id/radio_hard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/hardMode"
+                android:textColor="@color/ballWhite"
+                android:buttonTint="@color/ballWhite"
+                android:onClick="onLevelSelected" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

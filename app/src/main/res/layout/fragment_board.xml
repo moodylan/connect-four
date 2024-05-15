@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BoardFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:id="@+id/board_layout" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- TextView set to "invisible" -->
+        <TextView
+            android:id="@+id/state"
+            android:text="@string/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:textColor="@color/ballWhite"
+            android:textSize="40sp" />
+
+        <!-- Button set to "invisible" -->
+        <Button
+            android:id="@+id/restart"
+            android:text="@string/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"
+            android:textColor="@color/ballWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/board_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="6"
+        android:rowCount="7"
+        android:layout_margin="20dp"
+        >
+
+        <!-- Grid layout to represent the board -->
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+        <Button style="@style/circle" />
+    </GridLayout>
+</LinearLayout>
